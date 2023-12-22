@@ -1,0 +1,5 @@
+5 3 xor
+10 2 product
+7 9 compare
+15 8 xor
+4 4 compare

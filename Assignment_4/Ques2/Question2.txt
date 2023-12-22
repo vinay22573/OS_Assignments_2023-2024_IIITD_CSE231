@@ -1,0 +1,36 @@
+Question 2:
+
+Imagine a situation where multiple passengers eagerly await their turn to take a ride in a car. This car has a limited capacity and can only set off when fully occupied, with a maximum of C passengers on board (where C is less than the total number of passengers). Passengers have the simple tasks of getting on and off the car, while the car itself must manage the loading, running, and unloading procedures. Passengers are allowed to board only when the car has completed the loading process, and the car can commence its journey once it has reached its maximum passenger capacity. Passengers can disembark from the car only after it has completed its unloading process.
+
+Simulate the above by modeling the car and the passengers as threads. Take the total number of passengers and capacity as input from the user. 
+
+
+
+
+Board the ride when it is available
+Get off the ride when the ride is over
+
+Time taken for each step can be simulated using the sleep function with appropriate duration, and every action carried out must be printed to console (in case of passengers, mention which passenger is carrying out the action using appropriate means). Synchronization can be carried out between car and passenger threads as necessary. Ensure that your code is deadlock-free. Use semaphores for synchronization.
+
+Guidelines:
+
+Please ensure that the following functions are present in the code:
+
+void* car(void* args)                   // car thread
+
+void* passenger(void* args)         // passenger thread
+
+void load()                                    // loading car with passengers
+
+void unload()                                // unloading passengers
+
+void board()                                  // passenger boards car
+
+void offboard()                         // passenger gets off car
+
+
+
+Deliverables:
+
+C code
+Writeup explaining code logic and how you avoid concurrency bugs in code
