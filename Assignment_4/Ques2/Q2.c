@@ -1,4 +1,4 @@
-// All the credits of this Solution is given to Aditya Upadhyay(CSAI'26) IIIT
+// All the credits of this Solution is given to Aditya Upadhyay(CSAI'26) IIITD
 #include <stdio.h>
 #include <pthread.h>
 #include <semaphore.h>
